@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.title_container{
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+.title{
+    font-size:2em;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 20px; /* Espacio entre elementos */
+    padding: 20px;
+}
+
+.grid-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    display: flex; /* Hacer que los elementos flexibles */
+    flex-direction: column; /* Dirección de la distribución de los hijos */
+}
+
+.grid-item a {
+    text-decoration: none;
+    color: #333;
+    flex-grow: 1; /* Hace que el elemento a ocupe todo el espacio disponible */
+    display: flex; /* Alinear los elementos internos */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.grid-item:hover {
+    background-color: #f0f0f0;
+}
