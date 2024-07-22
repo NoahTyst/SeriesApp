@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Capítulos</title>
+    <link rel="stylesheet" href="..\..\Styles\ListStyles.css">
+</head>
+<body>
+    <div class="title_container">
+        <h1 class="title">Series App</h1>
+    </div>
+
+    <div class="grid-container">
+        <!-- Aquí se generará dinámicamente el listado de capítulos -->
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var gridContainer = document.querySelector('.grid-container');
+    
+            // Array con los códigos únicos para cada capítulo
+            var codigos = [
+                "jzd6vwjxye43","kqdy24xx4ita","ytk3mkb1sos8","syqcw2dm3lc9","ziafmpzfx9xj","nneh1kudrv98","zp878e319jhu","18vw2ix2l0gi","3rh0sxb2w1q2","g7qi6vshtbmo","c6wofvcd17ok",
+                "8o7f6v6x31iu","iwcmijtg13xc","pdxejntwtnap","6rj3v5rv7u90","6e7a6mownu7b","bc51hnmcbt9l","ts9qa5razw59","u0un3z3chdkc","t2uj7d0cc3p3","p1rdr6vx7kjh","9oyuuuavl4ga",
+                "tvrwx1o9655q","kt49f2nim1dh","ajlcy7cyxvzz","twsd1hgl0a5p","gw7habg6wi39","or6vrp4ztcdd","z6hxlcfp6bpt","6r9ve6j8x0pk","0vp0xz9vqovm","5o901a45uzkh","17mqcm1xsi0s",
+                "gpqp35918cwo","1241qbd7cf1l","01pq6rmgqt8f","bep9tpg50la5","o95v0bg1jz1o","h0errmvw5691","sgyziu1exlzp","nr55g6ihgewl","rbebwqgwg58n","h3m30fnvdfp7","bnmn51hafjzw",
+                "k2d0c89cwcky","7ur2q1fal91c","pkewzyi1qw1a","63j7hums45iz","6dly2095ymnr","xq66pig5uwyb","gnaiikqs3ge4","qq8f6wrasysv","0yo68n67tk51","3fonvlvc0mqy","x9eo9b51ef96",
+                "h94arbs6o9xm","i07fm5wqfgyb","w3ii0nyqq2qa","bhh4uep4e1s1","08n2tk40pj5u","kmzyhhhvo6kj","b9rlc9poc7vn","bhqpzestfg6a","dqlp2krabs0a","lnf1498nx8oi","2u0959ceo8am",
+                "c4srh4z1zf63","q9j8tgwotokw","h2aiblucobtg","zv4o88qldrq0","qsi0ueiyz5ug","4y2azig83d8a","4nyebnuvhpz9","f9zgl47n31mx","gsz3jrkjxbm0","e823d52azy3t","u4nz929848tt",
+                "symwe5lnqglm","00go7s8nr40i","5dojmjlmpamd","srkznueqbaw5","i6xyyl8rhgkl","ukmgw11dqdqa","zui1znkuit3a","55w9yixmbpwc","kmao650yua25","n3oc61sdctef","lhmvqdap1ekt",
+                "i9nya2rzck76"
+                
+            ];
+
+            // Generar 89 capítulos
+            for (var i = 1; i <= 89; i++) {
+                var capitulo = document.createElement('div');
+                capitulo.className = 'grid-item';
+                capitulo.innerHTML = '<a href="https://enpantallas.com/' + codigos[i-1] + '">Capítulo ' + i + '</a>';
+                
+                gridContainer.appendChild(capitulo);
+            }
+        });
+    </script>
+
+</body>
+</html>
